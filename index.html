@@ -34,6 +34,81 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="assets/css/owl.css">
 
     <style>
+  /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-banner {
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .main-banner {
+        padding-top: 100px; /* Tambahkan padding-top untuk memberikan jarak dari navbar */
+    }
+
+    .main-banner .left-content {
+        margin-top: 0;
+    }
+
+    .main-banner .right-image {
+        display: block;
+    }
+
+    .text-dark-mobile {
+        font-size: 15px;
+        line-height: 2;
+        text-align: left; /* Menjorokkan teks ke kiri */
+        margin-left: 0; /* Tambahkan margin kiri lebih besar */
+        margin-right: auto; /* Menghilangkan margin kanan */
+        max-width: 80%; /* Batas lebar maksimal untuk teks */
+    }
+
+    .main-banner h2 {
+        font-size: 30px;
+        text-align: left; /* Menjorokkan heading ke kiri */
+        margin-left: 0; /* Tambahkan margin kiri lebih besar */
+        margin-right: auto; /* Menghilangkan margin kanan */
+        max-width: 80%; /* Batas lebar maksimal untuk heading */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 991px) {
+    .main-banner {
+        padding-top: 80px; /* Tambahkan padding-top untuk memberikan jarak dari navbar */
+    }
+
+    .main-banner .left-content {
+        margin-top: 20px;
+    }
+
+    .main-banner .right-image {
+        display: block; /* Tampilkan gambar di mobile */
+        text-align: center; /* Pusatkan gambar */
+    }
+
+    .text-dark-mobile {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left; /* Menjorokkan teks ke kiri */
+        margin-left: 10px; /* Tambahkan margin kiri */
+        margin-right: 10px; /* Tambahkan margin kanan */
+    }
+
+    .main-banner h2 {
+        font-size: 24px;
+        text-align: left; /* Menjorokkan heading ke kiri */
+        margin-left: 10px; /* Tambahkan margin kiri */
+        margin-right: 10px; /* Tambahkan margin kanan */
+    }
+}
+
 .text-light {
     color: #ffffff; /* Warna teks terang */
 }
@@ -53,42 +128,102 @@ https://templatemo.com/tm-570-chain-app-dev
     margin-left: 10px; 
     margin-right: 10px;
   } */
-      .custom-container {
-          display: flex;
-          align-items: center;
-          padding: 50px 0;
-      }
+  @media (min-width: 992px) {
+  .custom-container {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+  }
 
-      .custom-image {
-          border-radius: 25px;
-          margin-right: 30px; /* Tambahkan jarak antara gambar dan teks */
-      }
+  .custom-image {
+    border-radius: 25px;
+    margin-right: 30px; /* Tambahkan jarak antara gambar dan teks */
+    max-width: 100%;
+    height: auto;
+  }
 
-      .custom-button {
-          background: linear-gradient(to right, rgb(1,230,248), rgb(29,62,222));
-          color: white;
-          padding: 10px 20px;
-          border-radius: 50px;
-          text-decoration: none;
-          display: inline-block;
-          margin-top: 20px;
-      }
+  .custom-button {
+    background: linear-gradient(to right, rgb(1, 230, 248), rgb(29, 62, 222));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
 
-      .custom-button:hover {
-          color: white;
-          text-decoration: none;
-      }
+  .custom-button:hover {
+    background: linear-gradient(to right, rgb(1, 230, 248), rgb(29, 62, 222));
+    color: white;
+    text-decoration: none;
+  }
 
-      .custom-text h2 {
-          font-size: 2.5rem;
-          margin-bottom: 20px;
-      }
+  .custom-text {
+    color: black;
+}
 
-      .custom-text p {
-          font-size: 1.25rem;
-          margin-bottom: 20px;
-      }
+  .custom-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
 
+  .custom-text p {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-container {
+    padding: 0;
+  }
+
+  .custom-image {
+    max-width: 80%; /* Mengurangi ukuran maksimal gambar */
+    height: auto;
+    border-radius: 25px;
+    margin: -30px auto 10px; /* Mengangkat ke atas dan memusatkan secara horizontal */
+    display: block; /* Memastikan gambar tampil sebagai blok */
+  }
+
+
+  .custom-button {
+    background: linear-gradient(to right, rgb(1, 230, 248), rgb(29, 62, 222));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: block;
+    width: 100%; /* Tombol penuh lebar */
+    text-align: center; /* Pusatkan teks tombol */
+    margin-top: 20px;
+  }
+
+  .custom-button:hover {
+    background: linear-gradient(to right, rgb(1, 230, 248), rgb(29, 62, 222));
+    color: white;
+    text-decoration: none;
+  }
+
+  .custom-text {
+    text-align: left; /* Pusatkan teks di dalam .custom-text */
+    padding: 0 20px; /* Tambahkan padding kiri dan kanan 20px */
+    margin-bottom: 20px; /* Berikan margin bottom untuk jarak ekstra */
+    color: black;
+}
+
+  .custom-text h2 {
+    font-size: 2rem; /* Sesuaikan ukuran font untuk mobile */
+    margin-bottom: 15px; /* Sesuaikan margin bottom */
+  }
+
+  .custom-text p {
+    font-size: 2rem; /* Sesuaikan ukuran font untuk mobile */
+    margin-bottom: 20px; /* Sesuaikan margin bottom */
+    
+  }
+}
 
       .footer-widget {
     margin-bottom: 30px;
@@ -262,55 +397,47 @@ https://templatemo.com/tm-570-chain-app-dev
     </section>
 </div>
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
+<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12 text-dark">
-                    <h2>PT.Data Buana Nusantara</h2>
-                    <p class="text-dark text-dark-mobile">Memberikan layanan internet connection dengan berbagai media wireless dan fiber optic. solusi yang kreatif serta komitmen atas layanannya, kami percaya mampu memberikan jasa yang berkualitas, konsisten dan memiliki nilai tambah demi tercapainya tujuan bersama. ditunjang dengan server berteknologi tinggi akan menghasilkan layanan yang supercepat dengan suport team 24 Jam.</p>
+          <div class="col-lg-12">
+              <div class="row">
+                  <div class="col-lg-6 align-self-center">
+                      <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                          <div class="row">
+                              <div class="col-lg-10 text-dark-mobile mt-4">
+                                  <h2>PT. Data Buana Nusantara</h2>
+                                  <p class="text-dark-mobile">
+                                      Memberikan layanan internet connection dengan berbagai media wireless dan fiber optic. solusi yang kreatif serta komitmen atas layanannya, kami percaya mampu memberikan jasa yang berkualitas, konsisten dan memiliki nilai tambah demi tercapainya tujuan bersama. ditunjang dengan server berteknologi tinggi akan menghasilkan layanan yang supercepat dengan suport team 24 Jam.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <!-- <div class="col-lg-12">
-                    <div class="white-button first-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
-                    </div>
-                    <div class="white-button scroll-to-section">
-                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
-                    </div>
-                  </div> -->
-                </div>
+                  <div class="col-lg-6 mt-4">
+                      <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                          <img src="assets/images/slider-dec.png" alt="">
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/slider-dec.png" alt="">
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
-  </div> 
-</div>
+  </div>
 </div>
 
 <div class="container custom-container">
   <div class="row">
     <div class="col-md-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-        <img src="assets/images/learn-img.jpg" alt="Learn Image" class="img-fluid w-100 custom-image mb-4">
+      <img src="assets/images/learn-img.jpg" alt="Learn Image" class="img-fluid w-100 custom-image mb-4">
     </div>
     <div class="col-md-7 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-        <h2 class="mt-4">Internet <span class="text-primary">Supercepat</span></h2>
-        <p class="text-dark mt-4">Performa jaringan <b>Data Buana Nusantara</b> merupakan salah satu yang terbaik di Indonesia. dengan server teknologi terkini yang mempunyai kehandalan siap untuk melayani pekerjaan anda.</p>
-        <a href="#" class="custom-button mt-3">Lihat area coverage <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <h2 class="custom-text h2">Internet <span class="text-primary">Supercepat</span></h2>
+      <p class="custom-text ">Performa jaringan <b>Data Buana Nusantara</b> merupakan salah satu yang terbaik di Indonesia. dengan server teknologi terkini yang mempunyai kehandalan siap untuk melayani pekerjaan anda.</p>
+      <a href="#" class="custom-button">Lihat area coverage <i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
-</div>
+
 
   <div id="services" class="services section">
     <div class="container">
@@ -442,7 +569,9 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="section-heading">
             <h4>Apa yang <em>Dikatakan Pelanggan</em> Tentang kami. </h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p> -->
+            <!-- <p>PT. Data Buana Nusantara adalah perusahaan yang bergerak di bidang teknologi informasi dan komunikasi di Indonesia. 
+              Dengan komitmen terhadap kualitas layanan dan pelayanan pelanggan yang prima, PT. Data Buana Nusantara terus berupaya menjadi mitra strategis dalam mendukung transformasi digital di berbagai sektor industri.
+            </p> -->
           </div>
         </div>
         <div class="col-lg-12">
@@ -456,10 +585,9 @@ https://templatemo.com/tm-570-chain-app-dev
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
                             <h4>Lissa Gally</h4>
-                            <span class="date">30 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Financial Apps</span>
+                            <span class="date">30 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 col-12">
                               <i class="fa fa-star"></i>
@@ -477,10 +605,9 @@ https://templatemo.com/tm-570-chain-app-dev
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
                             <h4>Missi Limana</h4>
-                            <span class="date">29 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Digital Business</span>
+                            <span class="date">29 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 col-12">
                               <i class="fa fa-star"></i>
@@ -498,10 +625,9 @@ https://templatemo.com/tm-570-chain-app-dev
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
                             <h4>Aana Brown</h4>
-                            <span class="date">27 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Business &amp; Economics</span>
+                            <span class="date">27 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 col-12">
                               <i class="fa fa-star"></i>
@@ -519,10 +645,9 @@ https://templatemo.com/tm-570-chain-app-dev
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
                             <h4>Random User</h4>
-                            <span class="date">24 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">New App Ecosystem</span>
+                            <span class="date">24 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 col-12">
                               <i class="fa fa-star"></i>
@@ -540,10 +665,9 @@ https://templatemo.com/tm-570-chain-app-dev
                         <div class="row">
                           <div class="col-lg-4 col-sm-4 col-12">
                             <h4>Mark Amber Do</h4>
-                            <span class="date">21 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 d-none d-sm-block">
-                            <span class="category">Web Development</span>
+                            <span class="date">21 November 2021</span>
                           </div>
                           <div class="col-lg-4 col-sm-4 col-12">
                               <i class="fa fa-star"></i>
@@ -573,7 +697,7 @@ https://templatemo.com/tm-570-chain-app-dev
                                 <img src="assets/images/customer1.jpg" alt="">
                                 <div class="right-content">
                                   <h4 class="text-primary">Lissa Gally</h4>
-                                  <span>CEO of Lissa Gally Company</span>
+                                  <!-- <span>CEO of Lissa Gally Company</span> -->
                                 </div>
                               </div>
                             </div>
@@ -594,7 +718,7 @@ https://templatemo.com/tm-570-chain-app-dev
                                 <img src="assets/images/customer2.jpg" alt="">
                                 <div class="right-content">
                                   <h4>Missy Limana</h4>
-                                  <span>CTO of Digital Company</span>
+                                  <!-- <span>CTO of Digital Company</span> -->
                                 </div>
                               </div>
                             </div>
@@ -615,7 +739,7 @@ https://templatemo.com/tm-570-chain-app-dev
                                 <img src="assets/images/customer3.jpg" alt="">
                                 <div class="right-content">
                                   <h4>Aana Brown</h4>
-                                  <span>Founder of Catherina Co.</span>
+                                  <!-- <span>Founder of Catherina Co.</span> -->
                                 </div>
                               </div>
                             </div>
@@ -637,7 +761,7 @@ https://templatemo.com/tm-570-chain-app-dev
                                 <img src="assets/images/client-image.jpg" alt="">
                                 <div class="right-content">
                                   <h4>Random Staff</h4>
-                                  <span>Manager, Digital Company</span>
+                                  <!-- <span>Manager, Digital Company</span> -->
                                 </div>
                               </div>
                             </div>
@@ -659,7 +783,7 @@ https://templatemo.com/tm-570-chain-app-dev
                                 <img src="assets/images/client-image.jpg" alt="">
                                 <div class="right-content">
                                   <h4>Mark Am</h4>
-                                  <span>CTO, Amber Do Company</span>
+                                  <!-- <span>CTO, Amber Do Company</span> -->
                                 </div>
                               </div>
                             </div>
@@ -680,7 +804,7 @@ https://templatemo.com/tm-570-chain-app-dev
   <div id="pricing" class="pricing-tables">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-8 offset-lg-2 mt-3">
           <div class="section-heading">
             <h4>Daftar <em>Paket</em> &amp; <em>Colocation Server</em></h4>
             <img src="assets/images/heading-line-dec.png" alt="">
@@ -692,7 +816,7 @@ https://templatemo.com/tm-570-chain-app-dev
             <!-- Bagian Atas (3 Paket) -->
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="pricing-item-regular">
-                <span class="price text-secondary" style="font-size: 15px;">Rp.100.000/bln</span>
+                <span class="price text-dark" style="font-size: 15px;">Rp.100.000/bln</span>
                 <h4>ECONOMIC</h4>
                 <div class="icon">
                   <img src="assets/images/pricing-table-01.png" alt="">
@@ -710,7 +834,7 @@ https://templatemo.com/tm-570-chain-app-dev
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="pricing-item-pro">
-                <span class="price text-secondary" style="font-size: 15px;">Rp.150.000/bln</span>
+                <span class="price text-light" style="font-size: 15px; color: #ffffff; text-shadow: 2px 2px 4px #000000;">Rp.150.000/bln</span>
                 <h4>PREMIUM</h4>
                 <div class="icon">
                   <img src="assets/images/pricing-table-01.png" alt="">
@@ -728,7 +852,7 @@ https://templatemo.com/tm-570-chain-app-dev
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="pricing-item-regular">
-                <span class="price text-secondary" style="font-size: 15px;">Rp.200.000/bln</span>
+                <span class="price text-dark" style="font-size: 15px;">Rp.200.000/bln</span>
                 <h4>BUSINESS</h4>
                 <div class="icon">
                   <img src="assets/images/pricing-table-01.png" alt="">
@@ -750,7 +874,7 @@ https://templatemo.com/tm-570-chain-app-dev
             <!-- Bagian Bawah (2 Paket) -->
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="pricing-item-pro">
-                <span class="price text-secondary" style="font-size: 15px;">Rp.300.000/bln</span>
+                <span class="price text-light" style="font-size: 15px; color: #ffffff; text-shadow: 2px 2px 4px #000000;">Rp.300.000/bln</span>
                 <h4>DELUXE</h4>
                 <div class="icon">
                   <img src="assets/images/pricing-table-01.png" alt="">
@@ -768,7 +892,7 @@ https://templatemo.com/tm-570-chain-app-dev
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="pricing-item-regular">
-                <span class="price text-secondary" style="font-size: 15px;">Rp.500.000/bln</span>
+                <span class="price text-dark" style="font-size: 15px;">Rp.500.000/bln</span>
                 <h4>COZY</h4>
                 <div class="icon">
                   <img src="assets/images/pricing-table-01.png" alt="">

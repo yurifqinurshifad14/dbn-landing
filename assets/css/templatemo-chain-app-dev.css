@@ -903,25 +903,25 @@ Banner Style
   content: '';
   background-image: url(../images/slider-left-dec.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 50% auto; /* Menggunakan 150% lebar dan auto tinggi untuk memperbesar gambar */
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
 
 .main-banner .left-content {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .main-banner .left-content h2 {
   z-index: 2;
   position: relative;
   font-weight: 700;
-  line-height: 70px;
-  font-size: 50px;
+  line-height: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -961,7 +961,7 @@ Services Style
 */
 
 .services {
-  padding-top: 130px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -1097,7 +1097,7 @@ About Us
 */
 
 .about-us {
-  padding-top: 130px;
+  padding-top: 90px;
   position: relative;
 }
 
@@ -1175,12 +1175,12 @@ The Clients
 */
 
 .the-clients {
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
 .the-clients  .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 .the-clients  .section-heading p {
@@ -1194,10 +1194,12 @@ The Clients
 }
 
 .menu .thumb h4 {
-  margin-bottom: 0px;
+  padding: 0;
+  margin-bottom: 0; 
   font-size: 20px;
   color: #2a2a2a;
 }
+
 
 .menu .thumb span.date {
   display: inline-block;
@@ -1313,6 +1315,7 @@ The Clients
 }
 
 
+
 /* 
 ---------------------------------------------
 The Clients
@@ -1320,12 +1323,12 @@ The Clients
 */
 
 .pricing-tables {
-  padding-top: 130px;
+  padding-top: 50px;
 }
 
 .pricing-tables  .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 .pricing-tables  .section-heading p {
